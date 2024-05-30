@@ -1,0 +1,215 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* generic styles for the page */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    padding: 1rem;
+}
+a {
+    color: var(--magenta);
+}
+
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+/* intro styles */
+#intro {
+    padding-bottom: 10rem;
+}
+
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ .name {
+    font-family: var(--mono);
+    font-size: 1rem;
+     line-height: 190%;
+}
+
+.namee {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua);
+    display: block;
+    font-weight: 300;
+}
+
+#intro h2 {
+    font-size: 4rem;
+}
+
+.ull{
+    display: flex;
+    list-style:none;
+    gap: 30px;
+}
+.lli{
+    list-style: none;
+    padding-right: 800px;
+    padding:10px;
+    text-align:center;
+
+}
+.Resume{
+
+    text-align: center;
+    justify-content: center;
+}
+.projects{
+    background-color: #0d314b;
+}
+.images{
+    height: 400px;
+    width: 700px;
+    border-radius: 20px;
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    padding: 1rem;
+    display: grid;
+    grid-area: a;
+}
+.lefts{
+    display: grid;
+    grid-area: b;
+}
+
+.gridd{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "a b";
+
+}
+.images:hover{
+    border-left: 1px solid var(--hotmag);
+    border-top: 1px solid var(--hotmag);
+    padding: 1rem;
+}
+.innerImage{
+    border-radius: 20px;height:400px;width:700px;
+}
+
+
+.gradient{
+    height:2px;
+    background: linear-gradient(90deg, rgba(255,23,228,1) 35%, rgba(134,251,251,1) 67%);
+
+
+}
+.EmailMe{
+    padding-top: 10px;
+    background-color: #4b0d49;
+    text-align: center;
+    justify-content: center;
+    height: 30%;
+
+}
+
+.square{
+   padding-left: 10px;
+    padding-right: 10px;
+    background-color: #e310cb;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    border-radius: 10px;
+  color: #f7f8fa;
+    text-decoration: none;
+
+}
+.square:hover {
+    background-color: #ff17e5;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    border-radius: 10px;
+    color: #f7f8fa;
+    text-decoration: none;
+
+}
+.linksnav{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.linksnav a {
+    font-size: 30px; /* Adjust the size according to your preference */
+    margin: 0 10px; /* Adds 10px of horizontal space between the icons */
+}
+.links{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+
+}
+.links a {
+    font-size: 50px; /* Adjust the size according to your preference */
+    margin: 0 10px; /* Adds 10px of horizontal space between the icons */
+}
+
+.navbar{
+    display: flex;
+    list-style:none;
+    align-content:center;
+    text-align:center;
+    margin-left:400px;
+    padding-left: 80px;
+}
+
+.blackbox{
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 0rem;
+    width: 650px;
+}
