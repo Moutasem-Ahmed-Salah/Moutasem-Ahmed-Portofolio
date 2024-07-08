@@ -37,8 +37,8 @@ h3 {
 
 .profile-picture{
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
 margin: 2rem 0 4rem 0;
     border-left: 1px solid var(--aqua);
     border-top: 1px solid var(--aqua);
